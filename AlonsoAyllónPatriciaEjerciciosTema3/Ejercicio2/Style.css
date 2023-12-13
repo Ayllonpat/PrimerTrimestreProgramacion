@@ -1,0 +1,46 @@
+h1{
+  font-family: 'Neuton';
+  font-style: italic
+}
+body{
+  font-family: 'Neuton';
+  text-align: center;
+  background-color: rgb(219, 252, 229);
+}
+p{
+  text-align: justify;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-size: 19px;
+}
+h3{
+  font-size: 22px;
+  font-family: 'Neuton';
+  font-style: italic;
+
+}
+
+@font-face {
+  font-family: 'Neuton.bold';
+  src: url(Fuentes\Neuton-Bold.ttf);
+}
+@font-face {
+  font-family: 'Neuton.extraBold';
+  src: url(Fuentes/Neuton-ExtraBold.ttf);
+}
+@font-face {
+  font-family: 'Neuton.extraLight';
+  src: url(Fuentes/Neuton-ExtraLight.ttf);
+}
+@font-face {
+  font-family: 'Neuton.italic';
+  src: url(Fuentes/Neuton-Italic.ttf);
+}
+@font-face {
+  font-family: 'Neuton.light';
+  src: url(Fuentes/Neuton-Light.ttf);
+}
+@font-face {
+  font-family: 'Neuton';
+  src: url(Fuentes/Neuton-Regular.ttf);
+}
