@@ -55,4 +55,12 @@ public class Tienda {
 	public Tienda() {
 		
 	}
+	
+	public void mostrarLista() {
+		for (int i = 0; i < numProductos; i++) {//no puedes llamar al listado.lenght pq sino salen los productos nulos
+			//por lo que se añade el atributo numero productos
+			
+			System.out.println(listado[i]); //es un producto
+		}
+	}
 }

@@ -27,11 +27,11 @@ public class Principal {
 		
 		p.getPrecioFabrica();
 		
-		System.out.println(p.getPrecioFabrica());//sale el indicado por nosostros
+		//System.out.println(p.getPrecioFabrica());//sale el indicado por nosostros
 		
 		
 		//como crear un nuevo atributo
-		System.out.println("Diga precio");
+		/*System.out.println("Diga precio");
 		aux=sc.nextLine();
 		precioFabrica=Double.parseDouble(aux);
 		
@@ -52,7 +52,7 @@ public class Principal {
 		p.setPrecioFabrica(precioFabrica);//debemos llamar al setter para guardar el nuevo precio
 		System.out.println(p.getPrecioFabrica());//ya este getter muestra el nuevo precio guardado
 		
-		System.out.println(p.toString());//mostar todos los datos
+		System.out.println(p.toString());//mostar todos los datos*/
 		
 		//------------------------------------------------------------------------------------------
 		
@@ -91,15 +91,15 @@ public class Principal {
 				venta=false;
 			}
 			//a creando el producto antes
-			p=new Producto(nombre, precioFabrica, seccion, venta);
-			t.agregar(p);
+			//p=new Producto(nombre, precioFabrica, seccion, venta);
+			//t.agregar(p);
 			
 			//b Instanciando directamente el producto
 			t.agregar(new Producto(nombre, precioFabrica, seccion, venta));
 			break;
 			
 		case 2:
-			
+			t.mostrarLista();
 			break;
 			
 		default:
