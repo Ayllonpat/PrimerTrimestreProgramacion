@@ -1,23 +1,29 @@
 package repaso;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Principal {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		/**@author alonso.aypat22_trian*/
 		
 		Scanner sc=new Scanner(System.in);
+		Random rnd=new Random(System.nanoTime());
 		String aux, nombre;
 		double precioFabrica;
-		int seccion;
+		int seccion, id;
 		boolean venta;
 		int tam=0, tam2= 10;
 		//No se instancia vacios
 		
 		Producto p;
-		p=new Producto("Lechuga", 1.2, 1, true);
+		p=new Producto("Lechuga", 1.2, 1, true, 1);
 		Producto[] lista=new Producto[tam2];
+		
+		
+		
 		Tienda t;
 		t=new Tienda(lista, tam, 3);
 		
@@ -55,6 +61,12 @@ public class Principal {
 		System.out.println(p.toString());//mostar todos los datos*/
 		
 		//------------------------------------------------------------------------------------------
+		Producto p1, p2
+		;
+		p1=new Producto("Lechuga", 1.2, 1, true, 01);
+		p2=new Producto("Lechuga", 80, 1, true, 02);
+		t.agregar(p1);
+		t.agregar(p2);
 		
 		int opcion, lecturaVenta=0;
 		
@@ -62,7 +74,8 @@ public class Principal {
 		
 		do {
 		System.out.println("1.Para agregar producto nuevo");
-		System.out.println("2.Para mostrar lista\n");
+		System.out.println("2.Para mostrar lista");
+		System.out.println("3.Para mostrar lista por sección\n");
 		
 		aux=sc.nextLine();
 		opcion=Integer.parseInt(aux);
@@ -84,6 +97,7 @@ public class Principal {
 			System.out.println("Diga el estado en el que se encuentra(1 si esta en venta):");
 			aux=sc.nextLine();
 			lecturaVenta=Integer.parseInt(aux);
+			id=rnd
 			
 			if(lecturaVenta==1) {
 				venta=true;
@@ -95,14 +109,20 @@ public class Principal {
 			//t.agregar(p);
 			
 			//b Instanciando directamente el producto
-			t.agregar(new Producto(nombre, precioFabrica, seccion, venta));
+			t.agregar(new Producto(nombre, precioFabrica, seccion, venta, id));
 			break;
 			
 		case 2:
 			t.mostrarLista();
 			break;
-			
+		case 3:
+			System.out.println("Diga la sección:");
+			aux=sc.nextLine();
+			seccion=Integer.parseInt(aux);
+			t.mostrarLista2(lista);
+			break;
 		default:
+			
 			System.out.println("OPCIÓN NO DISPONIBLE");
 			break;
 		}

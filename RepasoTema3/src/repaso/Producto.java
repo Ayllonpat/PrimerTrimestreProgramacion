@@ -6,13 +6,16 @@ public class Producto {
 	private double precioFabrica;
 	private int seccion;//1 alime, 2 elec, 3 ropa
 	private boolean venta;
+	private int id;
+
 	
-	public Producto(String nombre, double precioFabrica, int seccion, boolean venta) {
+	public Producto(String nombre, double precioFabrica, int seccion, boolean venta, int id) {
 		super();
 		this.nombre = nombre;
 		this.precioFabrica = precioFabrica;
 		this.seccion = seccion;
 		this.venta = venta;
+		this.id = id;
 	}
 
 	public String getNombre() {
