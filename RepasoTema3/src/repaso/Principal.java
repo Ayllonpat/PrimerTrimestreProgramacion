@@ -97,7 +97,7 @@ public class Principal {
 			System.out.println("Diga el estado en el que se encuentra(1 si esta en venta):");
 			aux=sc.nextLine();
 			lecturaVenta=Integer.parseInt(aux);
-			id=rnd
+			//id=rnd.
 			
 			if(lecturaVenta==1) {
 				venta=true;
