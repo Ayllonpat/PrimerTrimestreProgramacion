@@ -13,7 +13,12 @@ public class Principal {
 
 	}
 	
-	public static void mostrarMenu() {
+	/**
+	 * sdfasdfasdf
+	 * @param a sdgfsdfgfsd
+	 * @return sdfgsdfgsdfg
+	 */
+	public static String mostrarMenu(int a) {
 		System.out.println("""
 				---------------------------------------------------------
 				BIENVENIDO A LA INMOBILIARIA DE 1ºDAM
@@ -25,5 +30,7 @@ public class Principal {
 					2.Calcular precio final del piso deseado
 					3.
 				""");
+		
+		return "";
 	}
 }

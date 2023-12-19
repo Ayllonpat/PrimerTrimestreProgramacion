@@ -109,7 +109,7 @@ public class Principal {
 			//t.agregar(p);
 			
 			//b Instanciando directamente el producto
-			t.agregar(new Producto(nombre, precioFabrica, seccion, venta, id));
+			//t.agregar(new Producto(nombre, precioFabrica, seccion, venta, id));
 			break;
 			
 		case 2:
